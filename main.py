@@ -9,7 +9,7 @@ if __name__ == "__main__":
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
 
-    iterations = 100_000
+    iterations = 1000
     execution_time = timeit.timeit(module.solution, number=iterations)
 
     average_time_per_iteration = execution_time / iterations

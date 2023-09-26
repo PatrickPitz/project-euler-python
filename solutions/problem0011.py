@@ -95,4 +95,4 @@ def solution():
     return highest_product
 
 
-print(solution())
+solution()
